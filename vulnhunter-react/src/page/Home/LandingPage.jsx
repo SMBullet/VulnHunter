@@ -1,7 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import demoUrl from '../../assets/Hero.png';
 
-function LandingPage({ scrollToFirstHome }) {
+function LandingPage() {
+  const navigate = useNavigate(); // Initialize useNavigate
+
+  const handleGetStarted = () => {
+    navigate('/scanner'); // Navigate to /scanner when clicked
+  };
+
   return (
     <section className='hero-section text-center mt-32 flex flex-col'>
       <h1 className='text-4xl font-extrabold leading-[1.15] text-white sm:text-6xl'>
@@ -16,7 +23,7 @@ function LandingPage({ scrollToFirstHome }) {
       </h2>
       <div className='mx-auto mt-5 flex max-w-fit space-x-4'>
         <button
-          onClick={scrollToFirstHome}  // Scrolls to FirstHome when clicked
+          onClick={handleGetStarted}  // Call handleGetStarted on click
           className='rounded-full mx-auto max-w-fit border px-5 py-2 text-sm font-medium shadow-sm border-white bg-white text-black hover:bg-transparent hover:text-white hover:ring-gray-400 hover:ring-2 transition duration-300 ease-in-out'
         >
           Get Started

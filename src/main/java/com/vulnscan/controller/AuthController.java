@@ -62,7 +62,7 @@ public class AuthController {
         // Save the user to the database
         User savedUser = userRepository.save(newUser);
 
-        // Authenticate and generate JWT token
+
         Authentication auth = new UsernamePasswordAuthenticationToken(
                 user.getEmail(),
                 user.getPassword()

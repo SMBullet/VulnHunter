@@ -1,7 +1,7 @@
 from ssh_helper import execute_command_on_kali
 
 def run_dnsenum(ip):
-    command = f"dnsenum {ip}"  # Replace with the Dnsenum command of your choice
+    command = f"dnsenum --threads 5 --noreverse --enum {ip}"  # Replace with the Dnsenum command of your choice
     output, error = execute_command_on_kali(command)
     
     if output:

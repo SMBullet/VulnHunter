@@ -1,7 +1,7 @@
 from ssh_helper import execute_command_on_kali
 
 def run_nmap(ip):
-    command = f"nmap -sV {ip}"  # Replace with the Nmap command of your choice
+    command = f"nmap -sC -sV {ip}"  # Replace with the Nmap command of your choice
     output, error = execute_command_on_kali(command)
     
     if output:

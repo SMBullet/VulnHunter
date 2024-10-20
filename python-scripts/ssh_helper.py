@@ -1,7 +1,7 @@
 import paramiko
 
 # SSH connection details
-hostname = '192.168.233.128'  # Replace with the IP address of your Kali Linux VM
+hostname = '192.168.100.75'  # Replace with the IP address of your Kali Linux VM
 port = 22
 username = 'mehdi'  # Replace with your Kali Linux username
 password = '2002'  # Replace with your Kali Linux password

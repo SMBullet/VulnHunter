@@ -117,7 +117,7 @@ const ScanPage = () => {
   const generatePDF = async (data) => {
     const { tool, target, status, timestamp, result } = data;
     const pdfDoc = await PDFDocument.create();
-    const page = pdfDoc.addPage([600, 400]);
+    const page = pdfDoc.addPage([600, 1000]);
     const { width, height } = page.getSize();
     const fontSize = 12;
 
@@ -155,9 +155,6 @@ const ScanPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-900 text-gray-100">
-      <header className="bg-gray-800 shadow-md p-4">
-        <h1 className="text-2xl font-bold text-center">CyberScan Pro</h1>
-      </header>
 
       <main className="container mx-auto px-4 py-8 max-w-4xl">
         <Card className="mb-8 bg-gray-800 border-gray-700">

@@ -35,12 +35,6 @@ const Navbar = () => {
                 <p className='text-sm lg:text-base cursor-pointer'>
                     VulnHunter
                 </p>
-                <div className='p-0 ml-9'>
-                    <Button variant="outline" className="flex items-center gap-3">
-                        <MagnifyingGlassIcon/>
-                        <span>Search</span>
-                    </Button>
-                </div>
             </div>
             <div className='mr-5'>
                 <Avatar>
