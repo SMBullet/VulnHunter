@@ -1,10 +1,7 @@
 # Vulnhunter
 
-<<<<<<< HEAD
 ![Vulnhunter Screenshot](./images/Home.png)
 
-=======
->>>>>>> origin/main
 ## Overview
 
 **Vulnhunter** is a network scanning application built with React for the frontend and Spring Boot for the backend. It allows users to perform security scans on network hosts and web servers using various tools, view scan results, and download reports in PDF format.
@@ -127,7 +124,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [React](https://reactjs.org/) for building the frontend.
 - [Spring Boot](https://spring.io/projects/spring-boot) for the backend framework.
 - [pdf-lib](https://pdf-lib.js.org/) for PDF generation.
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/main
